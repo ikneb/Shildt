@@ -19,7 +19,7 @@ class NewThreads implements Runnable {
         try {
             for (int i = 5; i > 0; i--) {
                 System.out.println(name + " thread: " + i);
-                Thread.sleep(1000);
+                Thread.sleep(5000);
             }
         } catch (InterruptedException e) {
             System.out.println("Interrupt " + name + " thread");
@@ -39,7 +39,7 @@ public class AnyThreadDemo {
         try{
             for(int i = 5;i > 0;i--) {
                 System.out.println("Home thread: " + i);
-                Thread.sleep(3000);
+                Thread.sleep(10000);
             }
 
         }catch (InterruptedException e){
